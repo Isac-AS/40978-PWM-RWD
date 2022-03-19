@@ -63,20 +63,9 @@
 
 }
 
-.cartProductGrid .cartProduct h3{
-    text-align: left;
-    margin-top: 2em;
-    margin-right: 1em;
-    font-size: 1.5em;
-    font-weight: bolder;
-    color: black;
-    grid-column: 1/2;
-}
 
-.cartProductGrid .cartProduct .cartBin{
-    width: 70px;
-    height: 70px;
-}
+
+
 
 .cartProductGrid .cartProduct .cartProductInfo{
 
@@ -85,7 +74,8 @@
 .cartProductGrid .cartProduct .cartProductInfo .quantitySection{
 
     display: grid;
-    grid-template-columns: 40% 15% 5% 10%;
+    justify-content: center;
+    grid-template-columns: 12% 8% 15% auto auto;
 }
 
 .cartProductGrid .cartProduct .cartProductInfo .quantitySection img{
@@ -98,8 +88,20 @@
     font-size: 20px;
     text-align: center;
     margin-top: 1.5em;
-    width: 75px;
-    height: 50px;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 130%;
+    height: 50%;
+}
+
+.cartProductGrid .cartProduct .cartProductInfo .quantitySection h3{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1.1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-weight: bolder;
+    color: black;
 }
 
 
@@ -166,7 +168,8 @@
 .cartTotalGrid .cartPromo input{
     font-size: 20px;
     width: 20em;
-    height: 5em;
+    height: 3em;
+    margin-bottom: 1em;
     text-align: center;
 }
 
@@ -195,13 +198,172 @@
     font-size: 30px;
 }
 
-@media (max-width: 768px){
+@media (min-width: 768px) and (max-width: 1200px){
+    .cartTitle{
+        color: #F0F0F0;
+        font-size: 2.5em;
+    }
+    .cartCounter{
+        font-size: 2em;
+    }
+
+
     .cartGrid {
         margin-top: 10px;
         display: block;
     }
 
-    header nav .searchBar{
-        display: none;
+    .cartProductGrid{
+        display: block;
     }
+
+    .cartProductGrid .cartProduct{
+        display: grid;
+        grid-template-columns: 30% auto;
+        margin-top: 2em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .cartProductGrid .cartProduct .cartProductDescription{
+        text-align: justify;
+        margin-top: 1em;
+        margin-right: 1em;
+        margin-left: 1em;
+        font-size: 1em;
+    }
+    .cartProductGrid .cartProduct .cartProductName{
+        text-align: center;
+        font-size: 1.25em;
+        font-weight: bold;
+
+    }
+    .cartProductGrid .cartProduct img{
+
+        margin-left: 2em;
+        margin-right: 1em;
+        margin-top: 1em;
+    }
+
+    .cartProductGrid .cartProduct .cartProductInfo .quantitySection{
+
+        display: grid;
+        grid-template-columns: 15% 15% 15% auto auto;
+        justify-content: center;
+    }
+
+    .cartProductGrid .cartProduct .cartProductInfo .quantitySection a{
+        justify-content: center;
+        float: left;
+    }
+    .cartProductGrid .cartProduct .cartProductInfo .quantitySection img{
+        margin-top: 1.5em;
+        justify-content: center;
+        margin-right: 1em;
+        width: 50%;
+        height: 50%;
+    }
+
+    .cartProductGrid .cartProduct .cartProductInfo .quantitySection input{
+
+        font-size: 15px;
+        text-align: center;
+        margin-top: 1.5em;
+        width: 100%;
+        height: 50%;
+    }
+
+    .cartProductGrid .cartProduct .cartProductInfo .quantitySection h3{
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 1.1em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: bolder;
+        color: black;
+    }
+
+    .cartTotalGrid{
+        text-align: center;
+        justify-content: center;
+        display: grid;
+    }
+
+    .cartTotalGrid .cartSummary{
+
+        border-radius: 20px;
+        background-color: #A4A4A4;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-right: 10em;
+        padding-left: 10em;
+        display: grid;
+    }
+
+
+    .cartTotalGrid .cartSummary .summaryTitle{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .cartTotalGrid .cartSummary .summaryContent{
+        margin-bottom: 2em;
+        margin-top: 1em;
+        font-size: 1.4em;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 55% auto;
+        column-gap: 5em;
+        row-gap: 0.5em;
+    }
+    .cartTotalGrid .cartSummary .summaryTotal{
+        margin-top: 1.5em;
+        font-size: 30px;
+        grid-column: 1/3;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cartTotalGrid .promoCheckout{
+        display: block;
+        justify-content: center;
+        }
+
+    .cartTotalGrid .cartPromo{
+        justify-content: center;
+        border-radius: 20px;
+        padding-bottom: 1em;
+        background-color: #A4A4A4;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .cartTotalGrid .cartPromo .promoTitle{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .cartTotalGrid .cartPromo input{
+        font-size: 20px;
+        width: 15em;
+        height: 3em;
+        text-align: center;
+    }
+
+    .cartTotalGrid .cartButton{
+        width: 20em;
+        height: 7em;
+    }
+
+    .cartTotalGrid .cartButton img{
+        margin-top: 1.8em;
+        height: 3em;
+        width: 3em;
+    }
+
+    .cartTotalGrid .cartButton .checkoutText{
+        margin-top: 30px;
+        font-size: 2.5em;
+    }
+
 }

@@ -6,101 +6,138 @@ header {
     background-color: #191919;
 }
 
-header .logo {
-    display: inline-grid;
-    height: 100%;
-    left: 20px;
+header nav {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
-header .inner{
-    width: 90%;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
+#logo {
+    height: 125px;
 }
 
-header .logo div{
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-header .logo img{
-    height: 120px;
-}
-
-header nav{
-    float: right;
-    height: 100%;
-    width: 70%;
-}
-
-header nav li{
-    display: table;
-    height: 100%;
-    float: left;
-    margin-right: 3%;
-}
-
-header nav li:first-of-type{
-    margin-right: 0.75em;
-}
-
-header nav li:last-of-type{
-    margin-right: 0;
-}
-
-header nav span {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-header nav a{
+header nav a {
     color: #FFFFFF;
+    align-self: center;
 }
 
-header nav a .iconedButton{
-    display: table-cell;
-    vertical-align: middle;
+header nav a .buttonWithIcon {
     background: #EEA10C;
     height: 1.75em;
     padding: 6px 10px;
+    margin-top: 0.4em;
     border-radius: 4px;
 }
 
-header nav .iconedButton:hover{
+header nav .buttonWithIcon:hover {
     filter: brightness(1.05);
 }
 
-header nav .searchBar{
+header nav .searchBar {
     background-color: #C4C4C4;
     height: 35%;
-    width: 35em;
-    color: #000000;
+    width: 24em;
     padding: 10px 20px;
     border-radius: 4px;
+    margin-left: 20%;
 }
 
-header nav .logInButton{
+header nav .logInButton {
     background-color: #FFC700;
     color: #000000;
     padding: 10px 20px;
     border-radius: 4px;
 }
 
-header nav .logInButton:hover{
-    filter: brightness(1.05);
+header nav .logInButton:hover {
+    filter: brightness(1.35);
 }
 
-header nav .signUpButton{
+header nav .signUpButton {
     background-color: #EEA10C;
     color: #000000;
     padding: 10px 20px;
     border-radius: 4px;
 }
 
-header nav .signUpButton:hover{
+header nav .signUpButton:hover {
     filter: brightness(1.05);
 }
+
+#multipleChoiceButton {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .searchBar {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-evenly;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .searchBar {
+        display: none;
+    }
+
+    #logo {
+        order: 0;
+        margin: 0 2em;
+    }
+
+    #glass {
+        order: -1;
+    }
+
+    #multipleChoiceButton {
+        display: block;
+        width: 2.5em;
+        border-radius: 4px;
+        order: -2;
+    }
+
+    header nav .logInButton {
+        display: none;
+    }
+
+    header nav .signUpButton {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

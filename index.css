@@ -1,0 +1,132 @@
+.homePage{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.homePage  h1{
+    color: #EEA10C;
+    margin-left: 3em;
+    margin-top: 3em;
+}
+
+/*--- Welcoming buttons --*/
+.homePage .welcomingButtons{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    column-gap: 3em;
+    margin-top: 1em;
+}
+
+.homePage .welcomingButtons .welcomingButton{
+    display: inline-grid;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 2em;
+    padding: 1vw;
+    background-color: #C4C4C4;
+}
+
+.homePage .welcomingButtons .welcomingButton img{
+    width: 1em;
+    vertical-align: center;
+}
+
+.homePage .welcomingButtons .welcomingButton u{
+    font-weight: bold;
+    color: black;
+}
+
+.homePage .welcomingButtons .welcomingButton:hover{
+    filter: brightness(1.15);
+}
+/*--- Welcoming buttons --*/
+
+
+/*--- Trending categories --*/
+.homePage .trendingCategories{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    column-gap: 5vw;
+    margin: 4em 4em;
+    justify-content: center;
+}
+
+.homePage .trendingCategories .category{
+    display: grid;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #C4C4C4;
+    font-size: 1.3em;
+}
+
+.homePage .trendingCategories .category img{
+    width: 5em;
+    padding: 0.5em 1em;
+    align-content: center;
+}
+
+.homePage .trendingCategories .category u{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: black;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.homePage .trendingCategories .category:hover{
+    filter: brightness(1.15);
+}
+
+/*--- Trending categories --*/
+
+
+/*--- Popular products --*/
+.homePage  .popularProducts{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 4em 4em;
+}
+
+.homePage .popularProducts a {
+    background-color: #C4C4C4;
+}
+
+.homePage .popularProducts .product{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: 55% auto;
+    border-radius: 50px;
+}
+
+.homePage .popularProducts .product img{
+    width: 70%;
+    margin-left: 3em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-radius: 50px;
+}
+
+.homePage .popularProducts .product .info{
+    margin-top: 3em;
+    margin-right: 1em;
+    font-size: 1.3em;
+    color: black;
+}
+
+.homePage .popularProducts .product .name{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1.7em;
+    grid-column: 1/3;
+    color: #FFFFFF;
+    background-color: black;
+    border-radius: 5px;
+    text-align: center;
+}
+/*--- Popular products --*/

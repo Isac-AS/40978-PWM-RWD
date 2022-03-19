@@ -1,0 +1,61 @@
+.wishlistBody{
+    font-family: 'IBM Plex Sans Condensed';
+    background-color: #464646;
+}
+.wishlistContainer{
+    /*background-color:#c4c4c4;*/
+
+
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+}
+
+.wishlistObject{
+
+    background-color:#c4c4c4;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 5px 5px 10px;
+    shape-margin: 10px;
+    border-radius: 20px;
+
+
+}
+.wishlistGrid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5em;
+    grid-auto-rows: auto auto auto;
+}
+
+.wishlistTitle{
+    color: #F0F0F0;
+    text-align: center;
+    font-size: 3.5vmax;
+}
+.wishlistCounter{
+    color: #F0F0F0;
+    text-align: center;
+    font-size: 1.5vmax;
+}
+.wishlistBin{
+    height: 75px;
+    width: 75px;
+    object-position: right;
+}
+.wishlistProductPicture{
+    height: 350px;
+    width: 350px;
+}
+.wishlistProduct{
+    text-align: center;
+    font-size: 2vmax;
+}
+.descriptionText{
+    font-size: 1.5vmax;
+}

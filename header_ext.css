@@ -1,0 +1,23 @@
+.headerExtContainer{
+    display: grid;
+    grid-template-columns: 75% 1fr;
+}
+
+.headerExtContainer .logo{
+    height: 100%;
+}
+
+.headerExtContainer .logo img{
+    margin-left: 59%;
+}
+
+.headerExtContainer .close{
+    height: 100%;
+}
+
+.headerExtContainer .close img{
+    width: 75px;
+    height: 75px;
+    float: right;
+    padding: 4%;
+}

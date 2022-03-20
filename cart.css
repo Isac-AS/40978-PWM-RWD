@@ -194,3 +194,14 @@
     margin-top: 30px;
     font-size: 30px;
 }
+
+@media (max-width: 768px){
+    .cartGrid {
+        margin-top: 10px;
+        display: block;
+    }
+
+    header nav .searchBar{
+        display: none;
+    }
+}

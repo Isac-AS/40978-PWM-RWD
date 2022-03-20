@@ -75,6 +75,7 @@
 .loginContainer .customBtn:hover {
     cursor: pointer;
 }
+
 .loginContainer .customBtn img.icon {
     background: transparent 5px 50% no-repeat;
     vertical-align: middle;

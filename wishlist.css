@@ -17,9 +17,10 @@
 }
 
 .wishlistGrid{
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .wishlistProductGrid{
@@ -34,11 +35,9 @@
     text-align: center;
     grid-template-columns: auto auto;
     background-color: #EEA10C;
-    width: 300px;
-    height: 100px;
-    margin-bottom: 5em;
-    margin-left: 42em;
-    margin-top: 5em;
+    margin-top: 1%;
+    max-width: 300px;
+    max-height: 100px;
     border-radius: 10px;
 }
 
@@ -48,8 +47,8 @@
     width: 60px;
 }
 
-.wishlistButton .checkoutText{
-    margin-top: 30px;
+.wishlistButton .buttonText{
+    margin-top: 20px;
     font-size: 30px;
 }
 
@@ -85,8 +84,8 @@
 }
 
 .wishlistProductGrid .wishlistProduct img{
-    height: 80%;
-    width: 70%;
+    max-height: 80%;
+    max-width: 70%;
     margin-left: 3em;
     margin-top: 2em;
     margin-bottom: 1em;
@@ -100,6 +99,7 @@
 .wishlistProductGrid .wishlistProduct .wishlistProductInfo .wishlistQuantitySection{
     display: grid;
     justify-content: center;
+    margin-top: 10%;
     grid-template-columns: 30% auto auto;
 }
 
@@ -147,16 +147,17 @@
     }
 
     .wishlistGrid{
-        display: block;
-        margin-bottom: 2em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
 
 
     .wishlistButton{
-        width: 175px;
-        height: 75px;
-        margin-left: 22em;
-        margin-right: 20em;
+        max-width: 175px;
+        max-height: 75px;
+        margin-top: 1%;
         border-radius: 10px;
     }
 
@@ -167,17 +168,23 @@
         width: 3.5em;
     }
 
-    .wishlistButton .checkoutText{
+    .wishlistButton .buttonText{
         margin-top: 20px;
         font-size: 20px;
     }
 
     .wishlistProductGrid .wishlistProduct{
+        margin-top: 2em;
+        margin-left: 5em;
+        margin-right: 5em;
+        margin-bottom: 0.75em;
+        background-color: #C4C4C4CC;
         border-radius: 20px;
+        display: grid;
+        grid-template-columns: 30% auto;
     }
 
     .wishlistProductGrid .wishlistProduct .wishlistProductName{
-
         font-size: 1.5em;
         padding-top: 0.4em;
         padding-bottom: 0.4em;
@@ -240,15 +247,17 @@
     }
 
     .wishlistGrid{
-        display: block;
-        margin-bottom: 1em;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
     }
 
 
     .wishlistButton{
-        width: 160px;
-        height: 70px;
-        margin-left: 18em;
+        max-width: 175px;
+        max-height: 75px;
+        margin-top: 1%;
         border-radius: 10px;
     }
 
@@ -259,9 +268,16 @@
         width: 3em;
     }
 
-    .wishlistButton .checkoutText{
+    .wishlistButton .buttonText{
         margin-top: 20px;
         font-size: 18px;
+    }
+
+    .wishlistProductGrid .wishlistProduct{
+        margin-top: 2em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-bottom: 0.75em;
     }
 
 
@@ -272,24 +288,27 @@
     }
 
     .wishlistProductGrid .wishlistProduct .wishlistProductDescription{
+        display: none;
         margin-top: 1.5em;
-        margin-left: 1em;
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     .wishlistProductGrid .wishlistProduct img{
-        height: 9em;
-        width: 9em;
-        margin: 1em 1.2em;
+        max-height: 8em;
+        max-width: 7em;
+        margin: 1.5em 0.6em;
+    }
 
+    .wishlistProductGrid .wishlistProduct .wishlistProductInfo .wishlistQuantitySection{
+        display: grid;
+        justify-content: center;
+        margin-top: 10%;
+        grid-template-columns: 30% auto auto;
     }
 
     .wishlistProductGrid .wishlistProduct .wishlistProductInfo .wishlistQuantitySection .wishlistAddButton{
-        width: 7em;
+        width: 6.5em;
         height: 2.5em;
-        margin-bottom: 2.5em;
-        margin-top: 2.8em;
-        margin-left: 0.5em;
         border-radius: 10px;
     }
     .wishlistProductGrid .wishlistProduct .wishlistProductInfo .wishlistQuantitySection p{
@@ -300,16 +319,16 @@
 
     .wishlistProductGrid .wishlistProduct .wishlistProductInfo .wishlistQuantitySection img{
         margin-top: 2.3em;
-        width: 2.75em;
-        height: 2.75em;
-    }
 
+        width: 2.5em;
+        height: 2.5em;
+    }
 
     .wishlistProductGrid .wishlistProduct .wishlistProductInfo .wishlistQuantitySection h3{
-        font-size: 1.75em;
-        margin-top: 1.55em;
+        font-size: 1.3em;
+        margin-top: 2em;
+        margin-left: 2.3em;
     }
-
 }
 
 

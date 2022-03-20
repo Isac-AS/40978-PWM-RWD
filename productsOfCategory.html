@@ -18,30 +18,41 @@
         <div class="priceSelection">
             <h2>Precio</h2>
             <div class="priceSelectionContainer">
-                <input class="minAmount" placeholder="Min €" type="number">
-                <input class="maxAmount" placeholder="Max €" type="number">
+                <input placeholder="Min €" type="number">
+                <input placeholder="Max €" type="number">
             </div>
         </div>
         <div class="brandSelection">
             <h2>Marcas</h2>
-            <form>
-                <input id="marca1" name="marca1" type="checkbox" value="marca1">
-                <label for="marca1"> Sennheiser</label><br>
-                <input id="marca2" name="marca2" type="checkbox" value="marca2">
-                <label for="marca2"> Logitech</label><br>
-                <input id="marca3" name="marca3" type="checkbox" value="marca3">
-                <label for="marca3"> AudioTechnica</label><br><br>
+            <form class="checkboxList">
+                <div class="checkboxAndTextContainer">
+                    <input id="marca1" name="marca1" type="checkbox" value="marca1">
+                    <label for="marca1"> Sennheiser</label>
+                </div>
+                <div class="checkboxAndTextContainer">
+                    <input id="marca2" name="marca2" type="checkbox" value="marca2">
+                    <label for="marca2"> Logitech</label>
+                </div>
+                <div class="checkboxAndTextContainer">
+                    <input id="marca3" name="marca3" type="checkbox" value="marca3">
+                    <label for="marca3"> AudioTechnica</label>
+                </div>
             </form>
         </div>
         <div class="additionalOptions">
             <h2>Otras opciones</h2>
-            <form>
-                <input id="op1" name="op1" type="checkbox" value="op1">
-                <label for="op1"> Opcion1</label><br>
-                <input id="op2" name="op2" type="checkbox" value="op2">
-                <label for="op2"> Opcion2</label><br>
-                <input id="op3" name="op3" type="checkbox" value="op3">
-                <label for="op3"> Opcion3</label><br><br>
+            <form class="checkboxList">
+                <div class="checkboxAndTextContainer">
+                    <input id="op1" name="op1" type="checkbox" value="op1">
+                    <label for="op1"> Opcion1</label>
+                </div>
+                <div class="checkboxAndTextContainer">
+                    <input id="op2" name="op2" type="checkbox" value="op2">
+                    <label for="op2"> Opcion2</label></div>
+                <div class="checkboxAndTextContainer">
+                    <input id="op3" name="op3" type="checkbox" value="op3">
+                    <label for="op3"> Opcion3</label>
+                </div>
             </form>
         </div>
     </div>
@@ -67,7 +78,6 @@
             <div class="name">
                 Tempest GHS301
             </div>
-
         </a>
 
         <a class="product" href="concreteProductSpecs.html">

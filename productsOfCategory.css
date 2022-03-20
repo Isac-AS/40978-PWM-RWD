@@ -3,121 +3,118 @@
     margin: 2em auto;
     display: grid;
     grid-template-areas: 'filter products';
-    grid-template-columns: 30% auto;
+    grid-template-columns: 25% auto;
     padding: 20px;
 }
 
-.catLeftFilter{
+.catLeftFilter {
     grid-area: filter;
-    display: grid;
-    grid-template-areas:
-            'sectionTitle'
-            'priceSelection'
-            'brandSelection'
-            'additionalOptions';
-    grid-template-rows: 6em 10em 10em 10em;
+    display: flex;
+    flex-flow: column;
     text-align: center;
     background-color: #3C3B3B;
     border-radius: 5px;
     padding-bottom: 2em;
 }
 
-.catLeftFilter h1{
+.catLeftFilter h1 {
     margin-top: 1em;
     color: #EEA10C;
+    font-size: 3em;
 }
 
-.catLeftFilter h2{
-    margin-top: 2em;
+.catLeftFilter h2 {
+    margin-top: 0.7em;
+    font-size: 2.5em;
     color: #EEA10C;
 }
 
-.catLeftFilter h1 .sectionTitle{
-    grid-area: sectionTitle;
+.catLeftFilter h1 .sectionTitle {
     border: 2px solid black;
 }
 
-.catLeftFilter .priceSelection{
-    grid-area: priceSelection;
+.catLeftFilter .priceSelection {
+    display: grid;
     grid-template-areas:
             'subsectionTitle'
             'priceSelectionContainer';
     justify-content: normal;
     margin-top: 1em;
-    display: grid;
 }
 
-.catLeftFilter .priceSelection h2{
+.catLeftFilter .priceSelection h2 {
     grid-area: subsectionTitle;
 }
 
-.catLeftFilter .priceSelection .priceSelectionContainer{
+.catLeftFilter .priceSelection .priceSelectionContainer {
     grid-area: priceSelectionContainer;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
-.catLeftFilter .priceSelection input{
-    width: 20%;
+.catLeftFilter .priceSelection input {
+    width: 4em;
     height: 2.3em;
-    margin: 2em 3em;
     text-align: center;
+    margin-top: 1em;
 }
 
-.catLeftFilter .priceSelection input .minAmount{
-    grid-area: minPrice;
-}
-
-.catLeftFilter .priceSelection input .maxAmount{
-    grid-area: maxPrice;
-}
-
-.catLeftFilter .brandSelection{
+.catLeftFilter .brandSelection {
     grid-area: brandSelection;
     margin-top: 1em;
 }
 
-.catLeftFilter .brandSelection h2{
+.catLeftFilter .brandSelection h2 {
     margin-bottom: 0.8em;
 }
 
-.catLeftFilter .brandSelection input{
-    float: left;
-    margin-left: 12em;
-    margin-right: 2em;
+.catLeftFilter .checkboxList {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
 }
 
-.catLeftFilter .brandSelection label{
-    float: left;
+.catLeftFilter .checkboxList .checkboxAndTextContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.catLeftFilter .brandSelection .checkboxList .checkboxAndTextContainer input {
+    margin-left: 25%;
+    margin-right: 1em;
+}
+
+.catLeftFilter .brandSelection .checkboxList .checkboxAndTextContainer label {
     font-weight: bolder;
     color: #FFFFFF;
+    font-size: 1.5em;
 }
 
-.catLeftFilter .additionalOptions{
+.catLeftFilter .additionalOptions .checkboxList .checkboxAndTextContainer input {
+    margin-left: 25%;
+    margin-right: 1em;
+}
+
+.catLeftFilter .additionalOptions .checkboxList .checkboxAndTextContainer label {
+    font-weight: bolder;
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
+
+.catLeftFilter .additionalOptions {
     grid-area: additionalOptions;
-    display: grid;
     margin-top: 1em;
 }
 
-.catLeftFilter .additionalOptions h2{
+.catLeftFilter .additionalOptions h2 {
     margin-bottom: 0.8em;
 }
 
-.catLeftFilter .additionalOptions input{
-    float: left;
-    margin-left: 12em;
-    margin-right: 2em;
-}
 
-.catLeftFilter .additionalOptions label{
-    float: left;
-    font-weight: bolder;
-    color: #FFFFFF;
-}
-
-
-
-
-
-.catProducts{
+.catProducts {
     grid-area: products;
     display: grid;
     grid-template-columns: auto auto;
@@ -133,11 +130,11 @@
     padding: 1em 5em;
 }
 
-.catProducts a{
-    background-color: #C4C4C4CC;
+.catProducts a {
+    background-color: #C4C4C4C4;
 }
 
-.catProducts .product{
+.catProducts .product {
     width: 90%;
     margin-left: 5%;
     margin-top: 3%;
@@ -147,7 +144,7 @@
     border-radius: 50px;
 }
 
-.catProducts .product img{
+.catProducts .product img {
     width: 70%;
     margin-left: 3em;
     margin-top: 2em;
@@ -155,14 +152,14 @@
     border-radius: 50px;
 }
 
-.catProducts .product .info{
+.catProducts .product .info {
     margin-top: 3em;
     margin-right: 1em;
     font-size: 1.3em;
     color: black;
 }
 
-.catProducts .product .name{
+.catProducts .product .name {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     font-size: 1.7em;
@@ -171,3 +168,100 @@
     background-color: black;
     border-radius: 5px;
 }
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    .catLeftFilter .brandSelection .checkboxList .checkboxAndTextContainer input {
+        margin-left: 15%;
+        margin-right: 1em;
+    }
+
+    .catLeftFilter .brandSelection .checkboxList .checkboxAndTextContainer label {
+        font-size: 1.2em;
+    }
+
+    .catLeftFilter .additionalOptions .checkboxList .checkboxAndTextContainer input {
+        margin-left: 15%;
+        margin-right: 1em;
+    }
+
+    .catLeftFilter .additionalOptions .checkboxList .checkboxAndTextContainer label {
+        font-size: 1.2em;
+    }
+
+    .catProducts {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .catGridContainer {
+        display: flex;
+        flex-flow: column;
+
+    }
+
+    .catLeftFilter {
+        display: none;
+    }
+
+    .catGridContainer .catProducts .information p {
+        display: none;
+    }
+
+    .catProducts {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

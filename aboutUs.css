@@ -43,23 +43,22 @@
 }
 
 .aboutUs .expect{
-    /* Hacer flex */
-    margin-top: 2%;
     background-color: #A4A4A4;
-    display: grid;
-    grid-template-columns: 40% auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 2% auto;
 }
 
 .aboutUs .expect img{
-    object-fit: cover;
-    max-width: 100%;
-    min-height: 30em;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    max-width: 30%;
+    min-height: 27em;
+    max-height: 50em;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .aboutUs .expect .expectText{
-    /* Ajustar flex */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,14 +87,12 @@
 }
 
 .aboutUs .founders{
-    /* Ajustar flex */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    margin: 0 auto;
 }
+
 .aboutUs .founders h1{
     text-align: center;
     color: white;
@@ -104,70 +101,66 @@
     font-size: 65px;
     line-height: 125px;
     margin-top: 3%;
+    margin-bottom: 5%;
 }
 
 .aboutUs .founders .founderTeam{
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    column-gap: 5%;
-    padding: 5%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 15%;
+    margin-bottom: 15%;
 }
 
 .aboutUs .founders .founderTeam .founderBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     border-radius: 10px;
-    text-align: center;
+    padding: 5%;
+    min-width: 30%;
 }
 
 .aboutUs .founders .founderTeam .founderBox img{
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 30%;
 }
 
 .aboutUs .founders .founderTeam .founderBox h2{
     text-align: center;
     font-style: normal;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 5%;
 }
 
 /* Mobile fix */
 @media (max-width: 768px) {
 
-    .aboutUs .intro{
-    }
-
     .aboutUs .intro h1{
         font-size: 50px;
         line-height: 100px;
-        text-align: center;
-        margin-bottom: 3%;
     }
 
     .aboutUs .intro p{
         font-size: 20px;
-        text-align: center;
-        max-width: 50%;
-        margin-bottom: 3%;
+        font-weight: lighter;
+        max-width: 65%;
+        margin-bottom: 5%;
     }
 
-    .aboutUs .expect{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 5% auto;
+    .aboutUs .expect {
+        background-image:  linear-gradient(to bottom, rgba(0,0, 0, .65), rgba(0, 0, 0, .85)),
+        url(https://d1eipm3vz40hy0.cloudfront.net/images/SSAC-Blog/compromiso-con-el-cliente.jpg);
+        background-position: center;
+        background-size: cover;
     }
 
     .aboutUs .expect img{
         display: none;
-    }
-
-    .aboutUs .expect .expectText{
-
     }
 
     .aboutUs .expect .expectText h1{
@@ -177,9 +170,84 @@
     }
 
     .aboutUs .expect .expectText p{
-        text-align: center;
-        color: white;
-        font-style: normal;
-        font-size: 30px;
+        font-size: 20px;
+        font-weight: lighter;
+        max-width: 65%;
+        margin-bottom: 6%;
+    }
+
+    .aboutUs .founders h1{
+        font-size: 60px;
+    }
+
+    .aboutUs .founders .founderTeam{
+        flex-direction: column;
+        margin-bottom: 15%;
+    }
+
+    .aboutUs .founders .founderTeam .founderBox{
+        margin-bottom: 5%;
+    }
+
+    .aboutUs .founders .founderTeam .founderBox img{
+        margin-bottom: 25%;
+    }
+}
+
+/* Tablet fix */
+@media (min-width: 768px) and (max-width: 1200px){
+
+    .aboutUs .intro h1{
+        font-size: 55px;
+        line-height: 125px;
+        margin-bottom: 1%;
+    }
+
+    .aboutUs .intro p{
+        font-size: 25px;
+        font-weight: lighter;
+        max-width: 65%;
+        margin-bottom: 5%;
+    }
+
+    .aboutUs .expect {
+        background-image:  linear-gradient(to bottom, rgba(0,0, 0, .65), rgba(0, 0, 0, .85)),
+        url(https://d1eipm3vz40hy0.cloudfront.net/images/SSAC-Blog/compromiso-con-el-cliente.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .aboutUs .expect img{
+        display: none;
+    }
+
+    .aboutUs .expect .expectText h1{
+        font-size: 55px;
+        line-height: 100px;
+        margin-top: 3%;
+    }
+
+    .aboutUs .expect .expectText p{
+        font-size: 25px;
+        font-weight: lighter;
+        max-width: 65%;
+        margin-bottom: 5%;
+    }
+
+    .aboutUs .founders h1{
+        font-size: 65px;
+    }
+
+    .aboutUs .founders .founderTeam{
+        flex-direction: column;
+        margin-bottom: 15%;
+    }
+
+    .aboutUs .founders .founderTeam .founderBox{
+        margin-bottom: 5%;
+    }
+
+    .aboutUs .founders .founderTeam .founderBox img{
+        margin-bottom: 25%;
     }
 }

@@ -3,17 +3,24 @@
 }
 
 .aboutUs {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .aboutUs .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
     background-image:  linear-gradient(to bottom, rgba(50,40, 40, .85), rgba(0, 0, 0, .85)),
     url(https://blog.pdainternational.net/wp-content/uploads/2018/08/rawpixel-653764-unsplash.jpg);
     background-position: center;
     background-size: cover;
-    height: 40em;
 }
 
 .aboutUs .intro h1{
@@ -23,22 +30,20 @@
     font-size: 75px;
     line-height: 125px;
     text-align: center;
-    margin-top: 4%;
     margin-bottom: 3%;
-    width: 100%;
 }
 
-.aboutUs .intro h2{
+.aboutUs .intro p{
     color: white;
     font-style: normal;
     font-size: 35px;
     text-align: center;
-    width: 75%;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
+    max-width: 75%;
+    margin-bottom: 2%;
 }
 
 .aboutUs .expect{
+    /* Hacer flex */
     margin-top: 2%;
     background-color: #A4A4A4;
     display: grid;
@@ -47,16 +52,20 @@
 
 .aboutUs .expect img{
     object-fit: cover;
-    width: 100%;
-    height: 30em;
+    max-width: 100%;
+    min-height: 30em;
     margin-top: 3%;
     margin-bottom: 3%;
 }
 
 .aboutUs .expect .expectText{
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    /* Ajustar flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .aboutUs .expect .expectText h1{
@@ -66,22 +75,26 @@
     font-weight: bold;
     font-size: 60px;
     line-height: 125px;
-    margin-top: 3%;
+    margin-bottom: 5%;
 }
 
-.aboutUs .expect .expectText h2{
+.aboutUs .expect .expectText p{
     text-align: center;
     color: white;
     font-style: normal;
     font-size: 30px;
-    width: 65%;
-    margin-left: 17%;
-    margin-bottom: 1%;
+    max-width: 65%;
+    margin-bottom: 5%;
 }
 
 .aboutUs .founders{
-    display: grid;
-    grid-template-row: 40% auto;
+    /* Ajustar flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
 }
 .aboutUs .founders h1{
     text-align: center;
@@ -118,4 +131,55 @@
     font-style: normal;
     font-size: 30px;
     margin-bottom: 5%;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+
+    .aboutUs .intro{
+    }
+
+    .aboutUs .intro h1{
+        font-size: 50px;
+        line-height: 100px;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .aboutUs .intro p{
+        font-size: 20px;
+        text-align: center;
+        max-width: 50%;
+        margin-bottom: 3%;
+    }
+
+    .aboutUs .expect{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 5% auto;
+    }
+
+    .aboutUs .expect img{
+        display: none;
+    }
+
+    .aboutUs .expect .expectText{
+
+    }
+
+    .aboutUs .expect .expectText h1{
+        font-size: 50px;
+        line-height: 75px;
+        margin-top: 3%;
+    }
+
+    .aboutUs .expect .expectText p{
+        text-align: center;
+        color: white;
+        font-style: normal;
+        font-size: 30px;
+    }
 }

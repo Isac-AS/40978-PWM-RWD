@@ -59,21 +59,20 @@
 }
 
 #productInfo .auxContainer .button {
-    flex: 50%;
+    flex: 33%;
     font-size: 1.5em;
+    align-self: center;
     width: 10em;
     height: 100%;
     background-color: #EEA10C;
-    border-radius: 5px;
-    align-self: center;
     text-align: center;
     padding: 10px;
     margin: 1em 2em 2em 0;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
 }
 
-#productInfo .auxContainer .button h3 {
-    color: black;
-}
 /*---------------------*/
 #selectionButtons {
     display: flex;
@@ -90,6 +89,7 @@
     padding: 1em 1.5em;
     border-radius: 15px;
 }
+
 /*---------------------*/
 
 #additionalOptions {
@@ -98,100 +98,147 @@
 }
 
 /*---------------------*/
-#additionalOptions .specs {
+#specs {
     font-size: 1.25em;
-    display: grid;
-    grid-template-columns: 22% auto;
     color: #FFFFFF;
-    text-align: justify;
     margin-left: 4em;
     margin-right: 2em;
     margin-bottom: 2em;
+    display: flex;
+    flex-flow: row wrap;
 }
 
-#additionalOptions .specs h1 {
-    grid-column: 1/3;
+#specs h1 {
+    flex: 100%;
     font-size: 1.8em;
     text-underline: #EEA10C;
     height: 1.5em;
     margin-top: 1em;
 }
 
-#additionalOptions .leftHandBoldTag {
+#specs .leftHandBoldTag {
     font-weight: bold;
+    flex: 25%;
     height: 1.7em;
 }
 
+#specs u {
+    flex: 75%;
+}
+
 /*---------------------*/
 
 
-#additionalOptions .opinions {
-    display: grid;
-    grid-template-columns: auto;
+#opinions {
+    display: flex;
+    flex-flow: column;
 }
 
-#additionalOptions .opinions .concreteOpinion {
-    display: grid;
+#opinions .concreteOpinion {
+    display: flex;
+    flex-flow: column;
     background-color: #C4C4C4;
-    grid-template-columns: auto auto;
-    vertical-align: center;
-    text-align: justify;
     margin: 2em 2em 1em 2em;
     padding: 15px;
     border-radius: 15px;
 }
 
-#additionalOptions .opinions .concreteOpinion .userName {
-    font-weight: bold;
-    font-size: 1.5em;
-    height: 1.5em;
+#opinions .concreteOpinion h2 {
+    margin-bottom: 0.6em;
 }
 
-.contentContainer .additionalOptions .opinions .concreteOpinion .score {
-    font-weight: bolder;
+#opinions .concreteOpinion h3 {
+    font-size: 1.3em;
+    margin-top: 0.6em;
 }
 
-.contentContainer .additionalOptions .opinions .concreteOpinion .opinionText {
-    grid-column: 1/3;
-    padding-top: 0.5em;
-    padding-bottom: 1.3em;
-
-}
-
-.contentContainer .additionalOptions .opinions .concreteOpinion .leftHandBoldTag {
-    font-weight: bold;
-}
-
-.contentContainer .additionalOptions .faqGrid {
-    display: grid;
-    grid-template-columns: auto;
+#opinions .concreteOpinion p {
+    font-size: 1.2em;
 }
 
 /*---------------------*/
-.contentContainer .additionalOptions .questionGrid {
-    display: grid;
+
+#frequentlyAskedQuestions {
+    display: flex;
+    flex-flow: column;
+}
+
+#frequentlyAskedQuestions .concreteQuestion {
+    display: flex;
+    flex-flow: column;
     background-color: #C4C4C4;
-    grid-template-columns: auto auto;
-    vertical-align: center;
-    text-align: justify;
     margin: 2em 2em 1em 2em;
     padding: 15px;
     border-radius: 15px;
+    font-size: 1.2em;
 }
 
-.contentContainer .additionalOptions .questionGrid .question {
-    font-weight: bold;
-    font-size: 1.5em;
-    height: 1.5em;
+#frequentlyAskedQuestions .concreteQuestion h2{
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
 }
 
-.contentContainer .additionalOptions .questionGrid .numberOfReplies {
-    font-weight: bolder;
+#frequentlyAskedQuestions .concreteQuestion p{
+    margin-top: 0.6em;
 }
 
-.contentContainer .additionalOptions .questionGrid .reply {
-    grid-column: 1/3;
-    padding-top: 0.5em;
-    padding-bottom: 1.3em;
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    #productView {
+        flex-flow: column nowrap;
+    }
+
+    #productInfo {
+        width: 85%;
+    }
+
+    #productInfo .auxContainer .button {
+        font-size: 1.15em;
+    }
+
+    #selectionButtons .concreteSelectionButton {
+        font-size: 1.5em;
+        padding: 0.5em 0.9em;
+    }
+
+    #specs {
+        font-size: 1em;
+    }
 }
 
+@media (max-width: 768px) {
+    #productView {
+        flex-flow: column nowrap;
+    }
+
+    #productInfo {
+        width: 85%;
+    }
+
+    #productView img{
+        width: 60%;
+    }
+
+    #actionButtons {
+        flex-flow: column nowrap;
+    }
+
+    #productInfo .auxContainer .button {
+        font-size: 1em;
+    }
+
+    #selectionButtons {
+        flex-flow: column nowrap;
+    }
+
+    #selectionButtons .concreteSelectionButton {
+        font-size: 1.2em;
+        padding: 0.3em 0.6em;
+        width: 70%;
+        margin-bottom: 1em;
+    }
+
+    #specs {
+        font-size: 1em;
+    }
+}

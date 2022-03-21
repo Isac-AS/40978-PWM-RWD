@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="css/styleSheet.css" rel="stylesheet">
+    <link href="concreteProduct.css" rel="stylesheet">
+    <title>Product name</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#opinions").hide();
+            $("#frequentlyAskedQuestions").hide();
+            $("#specsButton").click(function () {
+                $("#specs").fadeIn();
+                $("#opinions").fadeOut();
+                $("#frequentlyAskedQuestions").fadeOut();
+            });
+            $("#opinionsButton").click(function () {
+                $("#specs").fadeOut();
+                $("#opinions").fadeIn();
+                $("#frequentlyAskedQuestions").fadeOut();
+            });
+            $("#faqButton").click(function () {
+                $("#specs").fadeOut();
+                $("#opinions").fadeOut();
+                $("#frequentlyAskedQuestions").fadeIn();
+            });
+        });
+    </script>
+</head>
+<body style="background-color: #464646">
+<iframe src="header.html" style="border: none; width: 100%"></iframe>
+<div class="concreteProductContentContainer">
+    <div id="productView">
+        <img alt="Product"
+             src="https://thumb.pccomponentes.com/w-530-530/articles/35/350514/1752-hp-255-g8-amd-3020e-8gb-256gb-ssd-156.jpg">
+        <div id="productInfo">
+            <h2>HP 255 G8 AMD 3020E/8GB/256GB SSD/15.6"</h2>
+            <div class="auxContainer">
+                <h1 class="productPrice">385 €</h1>
+                <h3 class="additionalPriceInformation">Sin iva: 318.18 €</h3>
+            </div>
+            <div class="auxContainer">
+                <u class="leftHandBoldTag">Marca:</u>
+                <u>HP - P/N: 2W1D7EA | Cod. Artículo: 350514</u>
+            </div>
+            <div class="auxContainer">
+                <u class="leftHandBoldTag">Envío:</u>
+                <u>Envío Gratis</u>
+            </div>
+            <div class="auxContainer">
+                <u class="leftHandBoldTag">Devolución:</u>
+                <u>Devolución Gratis</u>
+            </div>
+            <div class="auxContainer">
+                <u class="leftHandBoldTag">Cantidad:</u>
+                <u>1</u>
+            </div>
+            <div class="auxContainer" id="actionButtons">
+                <button class="button">
+                    Añadir al carrito
+                </button>
+                <button class="button">
+                    Comprar
+                </button>
+                <button class="button">
+                    Añadir a la lista de deseos
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="selectionButtons">
+        <button class="concreteSelectionButton" type="button" id="specsButton">
+            Especificaciones del producto
+        </button>
+        <button class="concreteSelectionButton" type="button" id="opinionsButton">
+            Opiniones
+        </button>
+        <button class="concreteSelectionButton" type="button" id="faqButton">
+            Preguntas comunes
+        </button>
+    </div>
+    <div id="additionalOptions">
+        <div id="specs">
+            <h1>Características</h1>
+            <u class="leftHandBoldTag">Diseñado para empresas:</u>
+            <u>Completa con confianza tus proyectos gracias a la tecnología más reciente que incluye la potencia de un
+                procesador AMD Ryzen™ y memoria DDR4.</u>
+
+            <u class="leftHandBoldTag">Conexion excepcional:</u>
+            <u>Este portátil está preparado para conectar todos tus periféricos y ha sido diseñado para adaptarse a las
+                necesidades de los negocios con un puerto RJ-45 y un puerto HDMI.</u>
+
+
+            <h1>Especificaciones HP 255 G8</h1>
+            <u class="leftHandBoldTag">Procesador :</u>
+            <u> AMD 3020e (2 núcleos, frecuencia desde 1.2 Ghz hasta 2.6 GHz, 1MB L2 / 4MB L3).</u>
+
+            <u class="leftHandBoldTag">Memoria RAM:</u>
+            <u> 8GB DDR4-SDRAM 2400 MHz 1x8GB</u>
+
+            <u class="leftHandBoldTag">Almacenamiento:</u>
+            <u> 256 GB SSD</u>
+
+            <u class="leftHandBoldTag">Unidad óptica:</u>
+            <u>No</u>
+
+            <u class="leftHandBoldTag">Display:</u>
+            <u>39,6 cm (15.6") 1366 x 768 Pixeles</u>
+
+            <u class="leftHandBoldTag">Controlador gráfico:</u>
+            <u>AMD Radeon Graphics</u>
+
+            <u class="leftHandBoldTag">Conectividad:</u>
+            <u>10,100,1000 Mbit/s</u>
+
+            <u class="leftHandBoldTag">Cámara de portátil:</u>
+            <u>HP TrueVision HD</u>
+
+            <u class="leftHandBoldTag">Micrófono:</u>
+            <u>Sí</u>
+
+            <u class="leftHandBoldTag">Batería:</u>
+            <u>3 Celdas Ion-Litio 41 Wh</u>
+
+            <u class="leftHandBoldTag">Conexiones:</u>
+            <u>2 USB 3.2; 1 USB-C; 1 HDMI 1.4b; 1 RJ-45; 1 combo de auriculares/micrófono; Lector de tarjetas
+                SD,SDHC,SDXC</u>
+
+            <u class="leftHandBoldTag">Sistema operativo:</u>
+            <u>Windows 10 Home 64 bits</u>
+
+            <u class="leftHandBoldTag">Dimensiones:</u>
+            <u>37,6 x 24,6 x 2,25 cm</u>
+
+            <u class="leftHandBoldTag">Color:</u>
+            <u>Negro</u>
+
+            <u class="leftHandBoldTag">Peso:</u>
+            <u>1,78 kg</u>
+        </div>
+
+        <div id="opinions">
+            <div class="concreteOpinion">
+                <h1>Usuario Prueba 1</h1>
+                <h2>Valoración 4.5/5</h2>
+                <p>Rápido, buen diseño y buen precio. Para un uso doméstico es un gran portátil. </p>
+                <h3> Ventajas: </h3>
+                <p>Rápido, pequeño y cómodo</p>
+                <h3> Desventajas: </h3>
+                <p>Se calienta un poco mas de lo que pensaba</p>
+                <h3> ¿Recomendaría su compra?: </h3>
+                <p>Si</p>
+            </div>
+
+            <div class="concreteOpinion">
+                <h1>Usuario Prueba 2</h1>
+                <h2>Valoración 3.5/5</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat, gravida
+                    orci risus, imperdiet lectus pulvinar nam. Duis vitae at fermentum commodo turpis. Bibendum
+                    neque risus ipsum amet amet. Est scelerisque pellentesque nam sit sed suscipit ultricies et.
+                    Vivamus arcu sem pellentesque sit turpis hac suspendisse interdum ultricies.
+                </p>
+                <h3> Ventajas: </h3>
+                <p>Rápido, pequeño y cómodo</p>
+                <h3> Desventajas: </h3>
+                <p>Se calienta un poco mas de lo que pensaba</p>
+                <h3> ¿Recomendaría su compra?: </h3>
+                <p>Si</p>
+            </div>
+
+            <div class="concreteOpinion">
+                <h1>Usuario Prueba 3</h1>
+                <h2>Valoración 4.5/5</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat, gravida
+                    orci risus, imperdiet lectus pulvinar nam. Duis vitae at fermentum commodo turpis. Bibendum
+                    neque risus ipsum amet amet. Est scelerisque pellentesque nam sit sed suscipit ultricies et.
+                    Vivamus arcu sem pellentesque sit turpis hac suspendisse interdum ultricies.Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Consequat, gravida
+                    orci risus, imperdiet lectus pulvinar nam. Duis vitae at fermentum commodo turpis. Bibendum
+                    neque risus ipsum amet amet. Est scelerisque pellentesque nam sit sed suscipit ultricies et.
+                    Vivamus arcu sem pellentesque sit turpis hac suspendisse interdum ultricies.Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Consequat, gravida
+                    orci risus, imperdiet lectus pulvinar nam. Duis vitae at fermentum commodo turpis. Bibendum
+                    neque risus ipsum amet amet. Est scelerisque pellentesque nam sit sed suscipit ultricies et.
+                    Vivamus arcu sem pellentesque sit turpis hac suspendisse interdum ultricies.
+                </p>
+                <h3> Ventajas: </h3>
+                <p>Rápido, pequeño y cómodo</p>
+                <h3> Desventajas: </h3>
+                <p>Se calienta un poco mas de lo que pensaba</p>
+                <h3> ¿Recomendaría su compra?: </h3>
+                <p>Si</p>
+            </div>
+        </div>
+
+        <div id="frequentlyAskedQuestions">
+            <div class="concreteQuestion">
+                <h1>¿Tiene altavoces integrados?</h1>
+                <h2>Número de respuestas: 1</h2>
+                <h3>Fulanito: Compra verificada</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat, gravida
+                    orci risus, imperdiet lectus pulvinar nam. Duis vitae at fermentum commodo turpis. Bibendum
+                    neque risus ipsum amet amet. Est scelerisque pellentesque nam sit sed suscipit ultricies et.
+                    Vivamus arcu sem pellentesque sit turpis hac suspendisse interdum ultricies.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<iframe src="footer.html" style="border: none; height: 205px; width: 100%;"></iframe>
+</body>
+</html>

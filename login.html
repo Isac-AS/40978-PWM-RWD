@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
     <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
     <title>Log In</title>
-
+    <script src="LoginUser.js"></script>
     <link href="login.css" rel="stylesheet">
 
     <style>
         .interacted:invalid { border: 1px solid red; }
         .interacted:valid { border: 1px solid green; }
     </style>
-
 </head>
 <body class="loginTheme">
 <iframe src="header.html" style="border: none; width: 100%"></iframe>
-<form class="loginContainer">
+<form class="loginContainer" action="Contact.html" method="post" onsubmit="checkUser()">
 
-        <input class="loginBox" type="email" placeholder="Email" required />
-        <input class="loginBox" type="password" placeholder="Password" required />
+        <input class="loginBox" id="email1" type="email" placeholder="Email" required />
+        <input class="loginBox" id="password1" type="password" placeholder="Password" required />
         <p>OR</p>
         <div class="customBtn">
             <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" class="icon">
             <span class="buttonText">Continuar con Google</span>
         </div>
-        <input type="submit" class="loginButton" value="Log In" />
+        <input type="submit" class="loginButton" value="Log In">
 
-        <p class="passwordForgotten">Forgot password?</p>
+    <p class="passwordForgotten">Forgot password?</p>
 </form>
 <iframe src="footer.html" style="border: none; width: 100%"></iframe>
+
 
 <script type="text/javascript">
     var inputs = document.querySelectorAll('input[type=email]');

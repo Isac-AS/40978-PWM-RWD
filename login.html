@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+    document.querySelectorAll
+        ('input[type="email"]:invalid'); // matches input#foo
+    document.querySelectorAll
+        ('input[type="email"]:valid'); // matches input#bar
+</script>
+
 <head>
     <meta charset="UTF-8">
     <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
@@ -16,17 +23,19 @@
 </head>
 <iframe src="header.html" style="border: none; width: 100%"></iframe>
 <body class="loginTheme">
-<div class="loginContainer">
-        <input class="loginBox" type="email" placeholder="Email">
-        <input class="loginBox" type="password" placeholder="Password">
+<form class="loginContainer">
+
+        <input class="loginBox" type="email" required placeholder="Email">
+        <input class="loginBox" type="password" required placeholder="Password">
         <p>OR</p>
         <div class="customBtn">
             <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" class="icon">
             <span class="buttonText">Continuar con Google</span>
         </div>
         <input type="submit" class="loginButton" value="Log In">
+
         <p class="passwordForgotten">Forgot password?</p>
-</div>
+</form>
 <iframe src="footer.html" style="border: none; width: 100%"></iframe>
 </body>
 </html>

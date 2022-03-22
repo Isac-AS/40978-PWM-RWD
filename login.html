@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+    document.querySelectorAll
+        ('input[type="email"]:invalid'); // matches input#foo
+    document.querySelectorAll
+        ('input[type="email"]:valid'); // matches input#bar
+</script>
+
 <head>
     <meta charset="UTF-8">
     <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
     <title>Log In</title>
 
-    <link href="css/styleSheet.css" rel="stylesheet">
     <link href="login.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 </head>
+<iframe src="header.html" style="border: none; width: 100%"></iframe>
 <body class="loginTheme">
-<iframe src="header_ext.html" style="border: none; width: 100%"></iframe>
-<div class="loginContainer">
-    <input class="loginBox" type="email" placeholder="Email">
-    <input class="loginBox" type="password" placeholder="Password">
-    <p>OR</p>
-    <div id="customBtn">
-        <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" class="icon">
-        <span class="buttonText">Continuar con Google</span>
-    </div>
-    <button type="button" class="loginButton loginBox">Log In</button>
-    <p class="passwordForgotten">Forgot password?</p>
-</div>
+<form class="loginContainer">
+
+        <input class="loginBox" type="email" required placeholder="Email">
+        <input class="loginBox" type="password" required placeholder="Password">
+        <p>OR</p>
+        <div class="customBtn">
+            <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" class="icon">
+            <span class="buttonText">Continuar con Google</span>
+        </div>
+        <input type="submit" class="loginButton" value="Log In">
+
+        <p class="passwordForgotten">Forgot password?</p>
+</form>
+<iframe src="footer.html" style="border: none; width: 100%"></iframe>
 </body>
 </html>

@@ -1,38 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'IBM Plex Sans Condensed';
+}
+
+.signUpTheme{
+    background-color: #464646;
+}
+
 .signupContainer{
-    position: absolute;
-    margin-left: 37%;
-    margin-top: 5%;
-    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5% auto;
 }
 
 .signupContainer p{
     color: white;
     font-size: 22px;
     font-weight: bold;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     text-align: center;
 }
 
 .signupContainer p.passwordForgotten{
     color: #FFBB56;
+    margin-top: 2%;
 }
 
-.signupContainer .loginBox{
+.signupContainer .signUpBox{
     background: #F0F0F0;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    width: 100%;
-    height: 30px;
-    margin-bottom: 5%;
+    min-width: 45%;
+    min-height: 30px;
+    margin-bottom: 1%;
     font-size: 18px;
 }
 
-.signupContainer .loginButton{
-    font-size: 30px;
-    font-weight: bold;
-    height: 45px;
-    width: 101%;
+.signupContainer .signUpButton{
     background: #EEA10C;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    min-width: 20%;
+    padding: 0.3em;
+}
 
+/* Google Button */
+.signupContainer .customBtn {
+    display: inline-flex;
+    background: #F0F0F0;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    min-width: 20%;
+    margin-bottom: 1%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.signupContainer .customBtn:hover {
+    cursor: pointer;
+}
+
+.signupContainer .customBtn img.icon {
+    background: transparent 5px 50% no-repeat;
+    vertical-align: middle;
+    max-width: 30px;
+    min-height: 30px;
+    margin-right: 2%;
+}
+.signupContainer .customBtn span.buttonText {
+    vertical-align: middle;
+    position: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+
+
+    .signupContainer .signUpBox{
+        min-width: 50%;
+    }
+
+    /* Google Button */
+    .signupContainer .customBtn {
+        min-width: 30%;
+        padding: 0.3em;
+    }
+
+    .signupContainer .customBtn img.icon {
+        max-width: 25px;
+        min-height: 25px;
+        margin-right: 0.2em;
+    }
+
+    .signupContainer .customBtn span.buttonText {
+        font-size: 16px;
+    }
+
+    .signupContainer p{
+        margin-top: 1%;
+        font-size: 16px;
+        margin-bottom: 2%;
+    }
+
+    .signupContainer p.passwordForgotten{
+        margin-top: 3%;
+        font-size: 14px;
+    }
+
+    .signupContainer .signUpButton{
+        min-width: 20%;
+        padding: 0.2em;
+        font-size: 22px;
+        margin-top: 2%;
+    }
+}
+
+/* Tablet fix */
+@media (min-width: 768px) and (max-width: 1200px){
+
+    .signupContainer .signUpBox{
+        min-width: 50%;
+    }
+
+    /* Google Button */
+    .signupContainer .customBtn {
+        min-width: 20%;
+        padding: 0.4em;
+    }
+
+    .signupContainer .customBtn img.icon {
+        max-width: 28px;
+        min-height: 28px;
+        margin-right: 0.4em;
+    }
+
+    .signupContainer .customBtn span.buttonText {
+        font-size: 18px;
+    }
+
+    .signupContainer p{
+        font-size: 20px;
+        margin-bottom: 2%;
+        margin-top: 1%;
+    }
+
+    .signupContainer p.passwordForgotten{
+        margin-top: 3%;
+        font-size: 16px;
+    }
+
+    .signupContainer .signUpButton{
+        padding: 0.2em;
+        font-size: 22px;
+        min-width: 20%;
+        max-width: 25%;
+        margin-top: 2%;
+    }
 }

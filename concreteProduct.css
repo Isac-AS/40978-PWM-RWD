@@ -58,16 +58,25 @@
     flex: 50%;
 }
 
-#productInfo .auxContainer .button {
+#actionButtons {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#productInfo #actionButtons button {
     flex: 33%;
-    font-size: 1.5em;
+    font-size: 1.25em;
     align-self: center;
     width: 10em;
     height: 100%;
     background-color: #EEA10C;
     text-align: center;
     padding: 10px;
-    margin: 1em 2em 2em 0;
+    margin: 1em 1em 1em 0;
     font-weight: bold;
     color: black;
     border-radius: 10px;
@@ -207,6 +216,11 @@
 }
 
 @media (max-width: 768px) {
+
+    .concreteProductContentContainer {
+        font-size: 1em;
+    }
+
     #productView {
         flex-flow: column nowrap;
     }
@@ -221,10 +235,12 @@
 
     #actionButtons {
         flex-flow: column nowrap;
+
     }
 
-    #productInfo .auxContainer .button {
-        font-size: 1em;
+    #actionButtons button {
+        font-size: 0.8em;
+        width: 60%;
     }
 
     #selectionButtons {
@@ -239,6 +255,10 @@
     }
 
     #specs {
-        font-size: 1em;
+        flex-flow: column nowrap;
+    }
+
+    #specs .leftHandBoldTag{
+        margin-top: 1.5em;
     }
 }

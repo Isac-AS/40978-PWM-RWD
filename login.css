@@ -43,6 +43,10 @@
     font-size: 18px;
 }
 
+/* Form layout */
+.loginContainer .loginBox:invalid { border: 2px solid red; }
+.loginContainer .loginBox:valid { border: 2px solid green; }
+
 .loginContainer .loginButton{
     background: #EEA10C;
     border: 1px solid #000000;

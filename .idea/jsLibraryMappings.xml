@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
+<<<<<<< HEAD
+    <file url="PROJECT" libraries="{jquery}" />
+=======
     <file url="PROJECT" libraries="{jquery-1.10.2}" />
+>>>>>>> origin/Raúl
   </component>
 </project>

@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<script>
-    document.querySelectorAll
-        ('input[type="email"]:invalid'); // matches input#foo
-    document.querySelectorAll
-        ('input[type="email"]:valid'); // matches input#bar
-</script>
 
 <head>
     <meta charset="UTF-8">
@@ -13,29 +7,38 @@
     <title>Log In</title>
 
     <link href="login.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
-        $(function(){
-            $("#header").load("header.html");
-            $("#footer").load("footer.html");
-        });
-    </script>
+
+    <style>
+        .interacted:invalid { border: 1px solid red; }
+        .interacted:valid { border: 1px solid green; }
+    </style>
+
 </head>
-<iframe src="header.html" style="border: none; width: 100%"></iframe>
 <body class="loginTheme">
+<iframe src="header.html" style="border: none; width: 100%"></iframe>
 <form class="loginContainer">
 
-        <input class="loginBox" type="email" required placeholder="Email">
-        <input class="loginBox" type="password" required placeholder="Password">
+        <input class="loginBox" type="email" placeholder="Email" required />
+        <input class="loginBox" type="password" placeholder="Password" required />
         <p>OR</p>
         <div class="customBtn">
             <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" class="icon">
             <span class="buttonText">Continuar con Google</span>
         </div>
-        <input type="submit" class="loginButton" value="Log In">
+        <input type="submit" class="loginButton" value="Log In" />
 
         <p class="passwordForgotten">Forgot password?</p>
 </form>
 <iframe src="footer.html" style="border: none; width: 100%"></iframe>
+
+<script type="text/javascript">
+    var inputs = document.querySelectorAll('input[type=email]');
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].addEventListener('blur', function(event) {
+            event.target.classList.add('interacted');
+        }, false);
+    }
+</script>
+
 </body>
 </html>

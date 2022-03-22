@@ -1,7 +1,10 @@
 .contactContainer{
     background-color:#c4c4c4;
-    padding: 30px;
-    margin-bottom: 5%;
+    padding: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 5em;
+    margin-top: 5em;
 }
 .contactTitle{
     text-align: center;
@@ -16,8 +19,8 @@
 .contactGrid{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: 1em;
-    grid-auto-rows: 50% 50%;
+    grid-gap: 2em;
+    grid-auto-rows: auto auto;
     margin-bottom: 2em;
     margin-right: 2em;
 }
@@ -25,14 +28,99 @@
 .contactObject{
 
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
+    padding: 1em;
     font-size: 30px;
     text-align: center;
     box-shadow: 5px 5px 10px;
-    shape-margin: 10px;
     border-radius: 20px;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 
 }
-.contactPicture{
-    position: center;
+
+.contactObject .contactText{
+    font-size: 22px;
+    text-align: center;
+}
+.contactObject img{
+    height: 5em;
+    width: 5em;
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+    .contactContainer{
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-bottom: 3em;
+        margin-top: 3em;
+    }
+
+    .contactTitle{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 5%;
+    }
+
+    .contactGrid{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .contactObject{
+        font-size: 20px;
+        box-shadow: 5px 5px 7px;
+        border-radius: 20px;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    .contactObject .contactText{
+        font-size: 18px;
+        text-align: center;
+    }
+    .contactObject img{
+        height: 7em;
+        width: 7em;
+    }
+}
+
+@media (max-width: 768px){
+    .contactContainer{
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-bottom: 3em;
+        margin-top: 3em;
+    }
+
+    .contactTitle{
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 5%;
+    }
+
+    .contactGrid{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .contactObject{
+        font-size: 15px;
+        box-shadow: 5px 5px 7px;
+        border-radius: 20px;
+        margin-left: 1em;
+        margin-right: 0.4em;
+    }
+
+    .contactObject .contactText{
+        font-size: 14px;
+        text-align: center;
+    }
+    .contactObject img{
+        height: 5.5em;
+        width: 5.5em;
+    }
 }

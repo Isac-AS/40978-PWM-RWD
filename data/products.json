@@ -1,42 +1,9 @@
-{
-  "headphones": [
-    {
-      "name" : "Tempest GHS301",
-      "image":"https://img.pccomponentes.com/articles/25/253099/tempest-ghs301-barbarian-auriculares-gaming-71-rgb-pc-ps4-45521ba6-a86a-476c-b41c-b745ed768f49.jpg",
-      "price": "50.99€",
-      "priceWithoutTax" : "42.14€",
-      "extendedName" : "Tempest GHS301 Barbarian Auriculares Gaming RGB 7.1 PC/PS4/PS5/Switch"
-    },
-    {
-      "name" : "Tempest GHS301",
-      "image":"https://img.pccomponentes.com/articles/25/253099/tempest-ghs301-barbarian-auriculares-gaming-71-rgb-pc-ps4-45521ba6-a86a-476c-b41c-b745ed768f49.jpg",
-      "price": "50.99€",
-      "priceWithoutTax" : "42.14€",
-      "extendedName" : "Tempest GHS301 Barbarian Auriculares Gaming RGB 7.1 PC/PS4/PS5/Switch"
-    },
-    {
-      "name" : "Tempest GHS301",
-      "image":"https://img.pccomponentes.com/articles/25/253099/tempest-ghs301-barbarian-auriculares-gaming-71-rgb-pc-ps4-45521ba6-a86a-476c-b41c-b745ed768f49.jpg",
-      "price": "50.99€",
-      "priceWithoutTax" : "42.14€",
-      "extendedName" : "Tempest GHS301 Barbarian Auriculares Gaming RGB 7.1 PC/PS4/PS5/Switch"
-    }
-  ],
-  "laptops": [
-    {
-      "name" : "Tempest GHS301",
-      "image":"https://img.pccomponentes.com/articles/25/253099/tempest-ghs301-barbarian-auriculares-gaming-71-rgb-pc-ps4-45521ba6-a86a-476c-b41c-b745ed768f49.jpg",
-      "price": "50.99€",
-      "priceWithoutTax" : "42.14€",
-      "extendedName" : "Tempest GHS301 Barbarian Auriculares Gaming RGB 7.1 PC/PS4/PS5/Switch"
-    }
-  ],
-  "users" : [
-    {
-      "name" : "user1",
-      "email" : "user1@gmail.com",
-      "password" : "prueba"
-    }
-  ]
-
-}
+[
+  "data/headphones.json",
+  "data/laptops.json",
+  "data/furniture.json",
+  "data/sport.json",
+  "data/phones.json",
+  "data/videoGames.json",
+  "data/clothing.json"
+]

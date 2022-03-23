@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
     <title>Log In</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="LoginUser.js"></script>
     <link href="login.css" rel="stylesheet">
 
@@ -15,7 +16,7 @@
 </head>
 <body class="loginTheme">
 <iframe src="header.html" style="border: none; width: 100%"></iframe>
-<form class="loginContainer" action="Contact.html" method="post" onsubmit="checkUser()">
+<form class="loginContainer" method="post" onsubmit="checkUser()">
 
         <input class="loginBox" id="email1" type="email" placeholder="Email" required />
         <input class="loginBox" id="password1" type="password" placeholder="Password" required />

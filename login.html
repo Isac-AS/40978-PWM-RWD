@@ -1,30 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<script>
-    document.querySelectorAll
-        ('input[type="email"]:invalid');
-</script>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
     <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
     <title>Log In</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="LoginUser.js"></script>
     <link href="login.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
-        $(function(){
-            $("#header").load("header.html");
-            $("#footer").load("footer.html");
-        });
-    </script>
-</head>
-<iframe src="header.html" style="border: none; width: 100%"></iframe>
-<body class="loginTheme">
-<form class="loginContainer">
 
-        <input class="loginBox" type="email" required placeholder="Email">
-        <input class="loginBox" type="password" required placeholder="Password">
+    <style>
+        .interacted:invalid { border: 1px solid red; }
+        .interacted:valid { border: 1px solid green; }
+    </style>
+</head>
+<body class="loginTheme">
+<iframe src="header.html" style="border: none; width: 100%"></iframe>
+<form class="loginContainer" method="post" onsubmit="checkUser()">
+
+        <input class="loginBox" id="email1" type="email" placeholder="Email" required />
+        <input class="loginBox" id="password1" type="password" placeholder="Password" required />
         <p>OR</p>
         <div class="customBtn">
             <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" class="icon">
@@ -32,8 +27,19 @@
         </div>
         <input type="submit" class="loginButton" value="Log In">
 
-        <p class="passwordForgotten">Forgot password?</p>
+    <p class="passwordForgotten">Forgot password?</p>
 </form>
 <iframe src="footer.html" style="border: none; width: 100%"></iframe>
+
+
+<script type="text/javascript">
+    var inputs = document.querySelectorAll('input[type=email]');
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].addEventListener('blur', function(event) {
+            event.target.classList.add('interacted');
+        }, false);
+    }
+</script>
+
 </body>
 </html>

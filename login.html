@@ -4,42 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
-    <title>Log In</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="LoginUser.js"></script>
     <link href="login.css" rel="stylesheet">
-
+    <title>Log In</title>
     <style>
-        .interacted:invalid { border: 1px solid red; }
+        .interacted:invalid { background-color: #FFDDDD; }
         .interacted:valid { border: 1px solid green; }
     </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="LoginUser.js"></script>
+    <script>
+        var form;
+        function initiate(){
+            var button = document.getElementById("send");
+            button.addEventListener("click", sendit);
+            form = document.querySelector("form[name='loginData']");
+            form.addEventListener("invalid", validation, true);
+            form.addEventListener("input", checkval);
+        }
+
+        function validation(e){
+            var elem = e.target;
+            elem.style.background = '#FFDDDD';
+        }
+
+        function sendit(){
+            var elem = document.getElementById("password");
+            var valid = form.checkValidity();
+            if(valid){
+                form.submit();
+            } else if(elem.validity.patternMismatch || elem.validity.valueMissing){
+                alert('La contraseña debe contener mínimo 8 caracteres, incluyendo un carácter en mayúscula, ' +
+                    'un carácter en minúscula, un número y un carácter especial (. / _)');
+            }
+        }
+
+        function checkval(e){
+            var elem = e.target;
+            if(elem.validity.valid){
+                elem.style.background = '#FFFFFF';
+            }else{
+                elem.style.background = '#FFDDDD';
+            }
+        }
+        addEventListener("load", initiate);
+    </script>
 </head>
 <body class="loginTheme">
 <iframe src="header.html" style="border: none; width: 100%"></iframe>
-<form class="loginContainer" method="post" onsubmit="checkUser()">
+<form class="loginContainer" name="loginData" method="post" onsubmit="checkUser()">
 
-        <input class="loginBox" id="email1" type="email" placeholder="Email" required />
-        <input class="loginBox" id="password1" type="password" placeholder="Password" required />
+        <input class="loginBox" id="email" type="email" placeholder="Email" required />
+        <input class="loginBox" name="password" id="password" type="password" placeholder="Password" required
+               pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-_\.]).{8,}$"/>
         <p>OR</p>
         <div class="customBtn">
             <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" class="icon">
             <span class="buttonText">Continuar con Google</span>
         </div>
-        <input type="submit" class="loginButton" value="Log In">
+        <input type="submit" class="loginButton" id="send" value="Log In">
 
     <p class="passwordForgotten">Forgot password?</p>
 </form>
 <iframe src="footer.html" style="border: none; width: 100%"></iframe>
-
-
-<script type="text/javascript">
-    var inputs = document.querySelectorAll('input[type=email]');
-    for (var i = 0; i < inputs.length; i++) {
-        inputs[i].addEventListener('blur', function(event) {
-            event.target.classList.add('interacted');
-        }, false);
-    }
-</script>
-
 </body>
 </html>

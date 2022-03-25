@@ -5,13 +5,13 @@
       "password": "Prueba.1234"
     },
     {
-      "name": "user2",
+      "name": "Raúl",
       "address": "user2@gmail.com",
-      "password": "prueba2"
+      "password": "Prueba.5678"
     },
     {
-      "name": "user3",
+      "name": "Isac",
       "address": "user3@gmail.com",
-      "password": "prueba3"
+      "password": "Prueba.9069"
     }
 ]

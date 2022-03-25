@@ -1,0 +1,56 @@
+[
+  {
+    "id" : "13",
+    "name" : "Nike camiseta NBA Golden State Warrior Curry #30",
+    "image": "https://i8.amplience.net/t/jpl/jdes_product_list?plu=jd_501897_bl&qlt=92&w=363&h=363&v=1&fmt=auto",
+    "price": "110,00€",
+    "priceWithoutTax" : "80,00€",
+    "extendedName" : "Camiseta de Leyenda de la cancha NBA Golden State Warriors Curry #30",
+    "brand" : "Nike"
+  },
+  {
+    "id" : "14",
+    "name" : "EA7 Eagle T-Shirt",
+    "image":"https://i8.amplience.net/t/jpl/jdes_product_list?plu=jd_511724_bl&qlt=92&w=363&h=363&v=1&fmt=auto",
+    "price": "70,00€",
+    "priceWithoutTax" : "55,00€",
+    "extendedName" : "Emporio Armani EA7 Eagle T-Shirt",
+    "brand" : "Emporio Armani"
+  },
+  {
+    "id" : "15",
+    "name" : "Camiseta Lacoste Colour",
+    "image":"https://i8.amplience.net/t/jpl/jdes_product_list?plu=jd_397706_bl&qlt=92&w=363&h=363&v=1&fmt=auto",
+    "price": "70,00€",
+    "priceWithoutTax" : "55,00€ ",
+    "extendedName" : "Lacoste camiseta Colour Block Poly",
+    "brand" : "Lacoste"
+  },
+  {
+    "id" : "16",
+    "name" : "EA7 T-Shirt",
+    "image": "https://i8.amplience.net/t/jpl/jdes_product_list?plu=jd_511392_bl&qlt=92&exclusive=1&wid=363&hei=363&v=1&fmt=auto",
+    "price": "65,00€",
+    "priceWithoutTax" : "52,50€",
+    "extendedName" : "Emporio Armani EA7 Grain Tape T-Shirt",
+    "brand" : "Emporio Armani"
+  },
+  {
+    "id" : "17",
+    "name" : "The North Face T-Shirt",
+    "image":"https://i8.amplience.net/t/jpl/jdes_product_list?plu=jd_503620_bl&qlt=92&exclusive=1&wid=363&hei=363&v=1&fmt=auto",
+    "price": "35,00€",
+    "priceWithoutTax" : "25,00€",
+    "extendedName" : "The North Face Camiseta Colour Block Grid",
+    "brand" : "The North Face"
+  },
+  {
+    "id" : "18",
+    "name" : "Jordan T-Shirt",
+    "image":"https://i8.amplience.net/i/jpl/jd_505271_c?qlt=92&w=750&h=957&v=1&fmt=auto",
+    "price": "35,00€",
+    "priceWithoutTax" : "25,00€",
+    "extendedName" : "Jordan camiseta 3D",
+    "brand" : "Turtle Beach"
+  }
+]

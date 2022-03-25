@@ -1,0 +1,56 @@
+[
+  {
+    "id" : "25",
+    "name" : "Cómoda 3 cajones",
+    "image": "https://medias.conforama.pt/media/650by551/55568ff78884373bf3b1c24c3a0a6c7ba7f8cdf9_404522.webp",
+    "price": "149,90€",
+    "priceWithoutTax" : "123,88€",
+    "extendedName" : "Cómoda DUBLIN 3 cajones",
+    "brand" : "DUBLIN"
+  },
+  {
+    "id" : "26",
+    "name" : "Mesita de noche 3 cajones",
+    "image":"https://medias.conforama.pt/media/650by551/facf1527eb9c7650f2af029f4048acd0ab2ec41b_9445_FR.webp",
+    "price": "99,99€",
+    "priceWithoutTax" : "78,50€",
+    "extendedName" : "Mesita de noche 3 cajones AURA",
+    "brand" : "AURA"
+  },
+  {
+    "id" : "27",
+    "name" : "Sillón tela",
+    "image":"https://medias.conforama.pt/media/650by551/bbbab65c70dbf9ef519cca0e2919b87588d4ae0d_376721_S1.webp",
+    "price": "129,00€",
+    "priceWithoutTax" : "96,99€",
+    "extendedName" : "Sillón tela CUPIDO",
+    "brand" : "CUPIDO"
+  },
+  {
+    "id" : "28",
+    "name" : "Chaise Longue",
+    "image": "https://medias.conforama.pt/media/650by551/c6a529ba73d0c1ebf66cc644df252fbdca44ed63_404981.webp",
+    "price": "379,00€",
+    "priceWithoutTax" : "299,25€",
+    "extendedName" : "Chaise Longue PALERMO",
+    "brand" : "PALERMO"
+  },
+  {
+    "id" : "29",
+    "name" : "Silla de comedor",
+    "image":"https://medias.conforama.pt/media/650by551/02b376ed68682644300728c5de0bcdc8b51ff759_Elegance_Silla_Salon_898_v1a.webp",
+    "price": "99,99€",
+    "priceWithoutTax" : "82,93€",
+    "extendedName" : "Silla de comedor ELEGANCE",
+    "brand" : "ELEGANCE"
+  },
+  {
+    "id" : "30",
+    "name" : "Mueble TV 2 cajones",
+    "image":"https://medias.conforama.pt/media/650by551/91d0dfd9beba8aa21927f30baefe130af78b3c62_402864.webp",
+    "price": "379,00€",
+    "priceWithoutTax" : "271,89€",
+    "extendedName" : "Mueble TV 2 cajones BOSTON",
+    "brand" : "BOSTON"
+  }
+]

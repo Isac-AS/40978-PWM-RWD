@@ -1,0 +1,56 @@
+[
+  {
+    "id" : "19",
+    "name" : "Gran Turismo 7",
+    "image": "https://thumb.pccomponentes.com/w-530-530/articles/83/838537/1202-gran-turismo-7-ps5.jpg",
+    "price": "69,89€€",
+    "priceWithoutTax" : "57,76€",
+    "extendedName" : "Gran Turismo 7 PS5",
+    "brand" : "PS5"
+  },
+  {
+    "id" : "20",
+    "name" : "FIFA 22",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/45/453107/1372-fifa-22-ps5.jpg",
+    "price": "56,10€",
+    "priceWithoutTax" : "46,36€",
+    "extendedName" : "FIFA 22 PS5",
+    "brand" : "PS5"
+  },
+  {
+    "id" : "21",
+    "name" : "NBA 2K22",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/51/516837/178-nba-2k22-ps5.jpg",
+    "price": "32,83€",
+    "priceWithoutTax" : "27,13€",
+    "extendedName" : "NBA 2K22 PS5",
+    "brand" : "PS5"
+  },
+  {
+    "id" : "22",
+    "name" : "Marvel's Spider-Man",
+    "image": "https://thumb.pccomponentes.com/w-530-530/articles/33/335396/1245-marvels-spider-man-miles-morales-ultimate-edition-ps5.jpg",
+    "price": "64,82€",
+    "priceWithoutTax" : "53,57€",
+    "extendedName" : "Marvel's Spider-Man Miles Morales Ultimate Edition PS5",
+    "brand" : "PS5"
+  },
+  {
+    "id" : "23",
+    "name" : "Far Cry 6",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/41/412615/1469-far-cry-6-ps5.jpg",
+    "price": "31,35€",
+    "priceWithoutTax" : "25,91€",
+    "extendedName" : "Far Cry 6 PS5",
+    "brand" : "PS5"
+  },
+  {
+    "id" : "24",
+    "name" : "Marvel Avengers",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/38/386290/1767-marvel-avengers-ps5.jpg",
+    "price": "34,71€",
+    "priceWithoutTax" : "28,69€",
+    "extendedName" : "Marvel Avengers PS5",
+    "brand" : "PS5"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id" : "37",
+    "name" : "Apple iPhone 13 Pro",
+    "image": "https://thumb.pccomponentes.com/w-530-530/articles/57/578953/1663-apple-iphone-13-pro-1tb-plata-libre.jpg",
+    "price": "2333,99€",
+    "priceWithoutTax" : "1928,10€",
+    "extendedName" : "Apple iPhone 13 Pro 1TB Plata Libre",
+    "brand" : "Apple"
+  },
+  {
+    "id" : "38",
+    "name" : "Samsung Galaxy Note 20 Ultra 5G",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/31/310897/1848-samsung-galaxy-note-20-ultra-5g-12-256gb-mystic-black-libre.jpg",
+    "price": "1463,43€",
+    "priceWithoutTax" : "1209,45€",
+    "extendedName" : "Samsung Galaxy Note 20 Ultra 5G 12/256GB Mystic Black Libre",
+    "brand" : "Samsung"
+  },
+  {
+    "id" : "39",
+    "name" : "Motorola Razr 5G",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/39/398950/1699-motorola-razr-5g-8-256gb-negro-libre.jpg",
+    "price": "1265,66€",
+    "priceWithoutTax" : "1046,00€",
+    "extendedName" : "Motorola Razr 5G 8/256GB Negro Libre",
+    "brand" : "Motorola"
+  },
+  {
+    "id" : "40",
+    "name" : "Oppo Find X2 Pro",
+    "image": "https://thumb.pccomponentes.com/w-530-530/articles/28/284223/oppo-find-x2-pro-12-512gb-negro-libre.jpg",
+    "price": "1176,48€",
+    "priceWithoutTax" : "972,30€",
+    "extendedName" : "Oppo Find X2 Pro 12/512GB Negro Libre",
+    "brand" : "Oppo"
+  },
+  {
+    "id" : "41",
+    "name" : "Samsung Galaxy S21 Ultra 5G",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/34/348320/1247-samsung-galaxy-s21-ultra-5g-128gb-negro-libre.jpg",
+    "price": "1138,99€",
+    "priceWithoutTax" : "941,31€",
+    "extendedName" : "Samsung Galaxy S21 Ultra 5G 128GB Negro Libre",
+    "brand" : "Samsung"
+  },
+  {
+    "id" : "42",
+    "name" : "OPPO Find X5 5G",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/1011/10112576/1500-oppo-find-x5-5g-8-256gb-blanco-libre.jpg",
+    "price": "1000,98€",
+    "priceWithoutTax" : "827,26€",
+    "extendedName" : "OPPO Find X5 5G 8/256GB Blanco Libre",
+    "brand" : "NABAIJI"
+  }
+]

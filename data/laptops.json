@@ -1,0 +1,56 @@
+[
+  {
+    "id" : "7",
+    "name" : "Asus Chromebook Z1500CN-EJ0400",
+    "image": "https://thumb.pccomponentes.com/w-530-530/articles/35/359973/1620-asus-chromebook-z1500cn-ej0400-intel-pentium-n3350-8gb-64gb-emmc-156.jpg",
+    "price": "285€",
+    "priceWithoutTax" : "235,54€",
+    "extendedName" : "Asus Chromebook Z1500CN-EJ0400 Intel Celeron N3350/8GB/64GB eMMC/15.6\"",
+    "brand" : "Asus"
+  },
+  {
+    "id" : "8",
+    "name" : "Asus Chromebook 14 C424MA-EB0088",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/67/671999/19-asus-chromebook-14-c424ma-eb0088-intel-celeron-n4020-8gb-64gb-emmc-14-review.jpg",
+    "price": "309€",
+    "priceWithoutTax" : "255,37€",
+    "extendedName" : "Asus Chromebook 14 C424MA-EB0088 Intel Celeron N4020/8GB/64GB eMMC/14\"",
+    "brand" : "Asus"
+  },
+  {
+    "id" : "9",
+    "name" : "Lenovo Ideapad 3 CB 11AST5",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/66/664095/154-lenovo-ideapad-3-cb-11ast5-chromebook-amd-a4-9120c-4gb-64gb-emmc-116-cbc3635b-85f1-4815-afcc-ee4d5d12e873.jpg",
+    "price": "199€",
+    "priceWithoutTax" : "164,46€",
+    "extendedName" : "Lenovo Ideapad 3 CB 11AST5 Chromebook AMD A4-9120C/4GB/64GB eMMC/11.6\"",
+    "brand" : "Lenovo"
+  },
+  {
+    "id" : "10",
+    "name" : "HP 255 G8 ",
+    "image": "https://thumb.pccomponentes.com/w-530-530/articles/35/350514/1752-hp-255-g8-amd-3020e-8gb-256gb-ssd-156.jpg",
+    "price": "395€",
+    "priceWithoutTax" : "326,45€",
+    "extendedName" : "HP 255 G8 AMD 3020E/8GB/256GB SSD/15.6\"",
+    "brand" : "HP"
+  },
+  {
+    "id" : "11",
+    "name" : "Lenovo Ideapad 3 CB",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/66/664095/154-lenovo-ideapad-3-cb-11ast5-chromebook-amd-a4-9120c-4gb-64gb-emmc-116-cbc3635b-85f1-4815-afcc-ee4d5d12e873.jpg",
+    "price": "199€",
+    "priceWithoutTax" : "164,46€",
+    "extendedName" : "Lenovo Ideapad 3 CB 11AST5 Chromebook AMD A4-9120C/4GB/64GB eMMC/11.6\"",
+    "brand" : "Lenovo"
+  },
+  {
+    "id" : "12",
+    "name" : "HP 15S-fq2095ns",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/35/359467/139-hp-15s-fq2095ns-intel-core-i3-1115g4-8gb-256gb-ssd-156.jpg",
+    "price": "459€",
+    "priceWithoutTax" : "379,34€",
+    "extendedName" : "HP 15S-fq2095ns Intel Core i3-1115G4/8GB/256GB SSD/15.6\"",
+    "brand" : "HP"
+  }
+]

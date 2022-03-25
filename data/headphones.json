@@ -1,23 +1,56 @@
 [
   {
+    "id" : "1",
     "name" : "Tempest GHS301",
     "image": "https://img.pccomponentes.com/articles/25/253099/tempest-ghs301-barbarian-auriculares-gaming-71-rgb-pc-ps4-45521ba6-a86a-476c-b41c-b745ed768f49.jpg",
     "price": "50.99€",
     "priceWithoutTax" : "42.14€",
-    "extendedName" : "Tempest GHS301 Barbarian Auriculares Gaming RGB 7.1 PC/PS4/PS5/Switch"
+    "extendedName" : "Tempest GHS301 Barbarian Auriculares Gaming RGB 7.1 PC/PS4/PS5/Switch",
+    "brand" : "tempest"
   },
   {
-    "name" : "Nichi",
-    "image":"https://img.pccomponentes.com/articles/25/253099/tempest-ghs301-barbarian-auriculares-gaming-71-rgb-pc-ps4-45521ba6-a86a-476c-b41c-b745ed768f49.jpg",
-    "price": "50.99€",
-    "priceWithoutTax" : "42.14€",
-    "extendedName" : "Tempest GHS301 Barbarian Auriculares Gaming RGB 7.1 PC/PS4/PS5/Switch"
+    "id" : "2",
+    "name" : "Turtle Beach Recon 70",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/59/590015/1476-turtle-beach-recon-70-auriculares-gaming-multiplataforma-rojo-negro.jpg",
+    "price": "26,32€",
+    "priceWithoutTax" : "21,75€",
+    "extendedName" : "Turtle Beach Recon 70 Auriculares Gaming Multiplataforma Rojo/Negro",
+    "brand" : "Turtle Beach"
   },
   {
-    "name" : "Wichi",
-    "image":"https://img.pccomponentes.com/articles/25/253099/tempest-ghs301-barbarian-auriculares-gaming-71-rgb-pc-ps4-45521ba6-a86a-476c-b41c-b745ed768f49.jpg",
-    "price": "50.99€",
-    "priceWithoutTax" : "42.14€",
-    "extendedName" : "Tempest GHS301 Barbarian Auriculares Gaming RGB 7.1 PC/PS4/PS5/Switch"
+    "id" : "3",
+    "name" : "Turtle Beach Recon 50P",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/15/150333/1.jpg",
+    "price": "19,53€",
+    "priceWithoutTax" : "16,14€ ",
+    "extendedName" : "Turtle Beach Recon 50P Negros PS4/PC",
+    "brand" : "Turtle Beach"
+  },
+  {
+    "id" : "4",
+    "name" : "Beyerdynamic DT-770",
+    "image": "https://thumb.pccomponentes.com/w-530-530/articles/9/97388/beyerdynamic-dt-770-pro-80-ohm-auriculares-de-estudio-cerrados.jpg",
+    "price": "147,87€",
+    "priceWithoutTax" : "122,21€",
+    "extendedName" : "Beyerdynamic DT-770 Pro 80 Ohm Auriculares de Estudio Cerrados",
+    "brand" : "Beyerdynamic"
+  },
+  {
+    "id" : "5",
+    "name" : "Turtle Beach",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/42/429335/1602-turtle-beach-recon-500-auriculares-gaming-negros.jpg",
+    "price": "57,56€",
+    "priceWithoutTax" : "47,57€",
+    "extendedName" : "Turtle Beach Recon 500 Auriculares Gaming Negros",
+    "brand" : "Turtle Beach"
+  },
+  {
+    "id" : "6",
+    "name" : "Beyerdynamic DT-990",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/9/97386/beyerdynamic-dt-990-pro-auriculares-de-estudio-abiertos.jpg",
+    "price": "176,95€",
+    "priceWithoutTax" : "146,24€",
+    "extendedName" : "Beyerdynamic DT-990 Pro Auriculares de Estudio Abiertos",
+    "brand" : "Turtle Beach"
   }
 ]

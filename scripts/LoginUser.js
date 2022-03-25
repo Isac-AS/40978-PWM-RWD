@@ -1,10 +1,10 @@
 function checkUser() {
-    const email = document.getElementById("email1").value;
-    const password = document.getElementById("password1").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
 
     $.ajax({
         type: "GET",
-        url : "Users.json",
+        url : "data/Users.json",
         success:function(response)
         {
             console.log(response);
@@ -22,3 +22,5 @@ function checkUser() {
         }
     });
 }
+
+

@@ -37,12 +37,12 @@
   },
   {
     "id" : "11",
-    "name" : "Lenovo Ideapad 3 CB",
-    "image":"https://thumb.pccomponentes.com/w-530-530/articles/66/664095/154-lenovo-ideapad-3-cb-11ast5-chromebook-amd-a4-9120c-4gb-64gb-emmc-116-cbc3635b-85f1-4815-afcc-ee4d5d12e873.jpg",
-    "price": "199€",
-    "priceWithoutTax" : "164,46€",
-    "extendedName" : "Lenovo Ideapad 3 CB 11AST5 Chromebook AMD A4-9120C/4GB/64GB eMMC/11.6\"",
-    "brand" : "Lenovo"
+    "name" : "HP 15S-eq1140ns",
+    "image":"https://thumb.pccomponentes.com/w-530-530/articles/82/823218/156-hp-15s-eq1140ns-amd-3020e-4gb-128gb-ssd-156.jpg",
+    "price": "349,48",
+    "priceWithoutTax" : "288,83",
+    "extendedName" : "HP 15S-eq1140ns AMD 3020e/4GB/128GB SSD/15.6\"",
+    "brand" : "HP"
   },
   {
     "id" : "12",

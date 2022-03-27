@@ -20,6 +20,10 @@
     margin: 5% auto;
 }
 
+.loginContainer label{
+    color: #FF6666;
+}
+
 .loginContainer p{
     color: white;
     font-size: 22px;
@@ -140,6 +144,8 @@
 
 }
 
+
+
 /* Tablet fix */
 @media (min-width: 768px) and (max-width: 1200px){
 
@@ -179,4 +185,5 @@
         min-width: 20%;
         max-width: 25%;
     }
+
 }

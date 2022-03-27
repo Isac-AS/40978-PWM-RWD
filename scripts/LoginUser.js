@@ -1,10 +1,10 @@
 function checkUser() {
-    const email = document.getElementById("email1").value;
-    const password = document.getElementById("password1").value;
-
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    let fail;
     $.ajax({
         type: "GET",
-        url : "Users.json",
+        url : "data/Users.json",
         success:function(response)
         {
             console.log(response);
@@ -12,13 +12,19 @@ function checkUser() {
                 if(email === response[i].address && password === response[i].password){
                     window.alert("You have logged in as " + response[i].name);
                     window.location.href="index.html";
+                    fail = true;
                     break;
                 }
                 else{
-                    alert("Log in error, please try again with another email and password");
-                    break;
+                    fail = false;
                 }
+            }
+
+            if (!fail){
+                alert("Log in error, please try again with another email and password");
             }
         }
     });
 }
+
+
